@@ -28,7 +28,6 @@ def get_real_data(symbol: str = "SPY", interval: str = "5m", period: str = "1d")
         }
     )
 
-    # Keep only the columns we need
     needed_cols = ["open", "high", "low", "close", "volume"]
     data = data[needed_cols].dropna()
 
@@ -43,7 +42,6 @@ def fake_order_risk() -> float:
 
 
 def fake_trade_result() -> float:
-    # Still simulated execution/PnL for safety
     return random.choice([75, 50, -50, -75, 30, -30])
 
 
