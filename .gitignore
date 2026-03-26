@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+
+# Trading data
+*.csv
+*.log
+*.png
+
+# IMPORTANT: Never commit your API keys!
+alpaca_config.py
+
+# Backtest files
+backtest_trades*.csv
+equity_curve.csv
+monte_carlo*.csv
+monte_carlo*.png
